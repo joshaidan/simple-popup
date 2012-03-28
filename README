@@ -2,4 +2,6 @@ A very simple pop-up window system
 
 As seen on http://www.brianjones.ca/archives/2011/01/29/make-a-popup-window-like-popup-domination-for-free/
 
+Take a look at the sample file popup-sample.html for a demo of how to create a basic modal popup window. 
+
 This repository is a work in progress, so stay tuned!

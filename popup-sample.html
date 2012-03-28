@@ -1,0 +1,59 @@
+<html>
+    <meta charset="utf-8">
+    <title>Your Sample Website</title>
+ 
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/jquery-ui.css">
+ 
+    <style type="text/css">
+    .ui-widget-header {
+        background: white;
+        border: 0px;
+        color:black;
+ 
+    }
+ 
+    #ui-dialog-title-dialog {
+    background-color: black;
+    }
+ 
+    .ui-widget-overlay {
+        background: none repeat-x scroll 0 0 black;
+        opacity: 0.7;
+    }
+
+
+	
+    </style>
+ 
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+ 
+    $(document).ready(function() {
+        var $dialog = $("#dialogbox")
+            .html('<p>Looking to setup your own pop up window?</p><p>My free HTML code can help. By not signing up for my email newsletter, I will give you the code for free.</p><ul><li>that&#39;s an exciting offer!</li><li>You must be crazy to give away freely available HTML code for free to other people who...</li><li>want to exploit it to make lots of money.</li></ul><form><table style="margin-right:auto; margin-left:auto;"><tr><td style="text-align:right">Your first name:</td> <td><input type="text" name="firstname" /></td></tr><tr><td style="text-align:right">Email:</td> <td><input type="text" name="firstname" /></td></tr><tr><td></td><td><input type="submit"/></td></table></form>')
+            .dialog({
+                autoOpen: true,
+                resizable: false,
+                draggable: false,
+                width: 600,
+                modal: true,
+                title: 'Create Your Own PopUp Window',
+				closeOnEscape: false,
+				//open: function(event, ui) { $(".ui-dialog-titlebar-close").hide();}
+            });
+ 
+    });
+    </script>
+    
+<div id="dialogbox"></div>
+   
+</head>
+<body>
+ 
+<p>
+This is the normal text that sits in the background of your website.
+</p>
+ 
+</body>
+</html>
